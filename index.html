@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 id="title">My Survey</h1>
+        <p id="description">
+          This quick survey will be used to gain general knowledge about you.
+        </p>
+      </header>
+      <main>
+        <form action="" id="survey-form">
+          <fieldset>
+            <label id="name-label">
+              Full Name
+              <input
+                placeholder="i.e: John Doe"
+                type="text"
+                id="name"
+                required
+              />
+            </label>
+            <label id="email-label">
+              Email
+              <input
+                placeholder="i.e: myemail@helper.com"
+                type="email"
+                id="email"
+                required
+              />
+            </label>
+            <label id="number-label">
+              Choose a number ( 1 - 10 )
+              <input
+                placeholder="i.e: 3"
+                min="1"
+                max="10"
+                type="number"
+                id="number"
+              />
+            </label>
+            <label for="radio-label-header">Gender: </label>
+            <label for="radio-label">Male</label>
+            <input type="radio" id="radio" name="radio-gender" value="male" />
+            <label for="radio-label">Female</label>
+            <input type="radio" id="radio" name="radio-gender" value="female" />
+            <label for="radio-label">Other</label>
+            <input type="radio" id="radio" name="radio-gender" value="other" />
+          </fieldset>
+          <fieldset>
+            <label for="select-label">Do you like cats?</label>
+            <select name="select-answer" id="dropdown">
+              <option value="yes">Yes i do</option>
+              <option value="no">No i don't</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="checkbox-label-header">How many cats do you own?</label>
+            <label for="checkbox-label">None</label>
+            <input type="checkbox" value="none" />
+            <label for="checkbox-label">1</label>
+            <input type="checkbox" value="1" />
+            <label for="checkbox-label">2</label>
+            <input type="checkbox" value="2" />
+            <label for="checkbox-label">3</label>
+            <input type="checkbox" value="3" />
+            <label for="checkbox-label">+3</label>
+            <input type="checkbox" value="+3" />
+          </fieldset>
+          <fieldset>
+            <label for="textarea-label"
+              >Why did you own or not own a cat?
+            </label>
+            <textarea
+              placeholder=" Cats are awesome!..."
+              name="textarea-answer"
+              id="textarea-comment"
+              cols="30"
+              rows="1"
+            ></textarea>
+          </fieldset>
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
